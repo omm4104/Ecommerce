@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+body{
+  width: 100%;
+  font-family: 'Unbounded', sans-serif;
+}
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  padding-left: 15px;
+  padding-right: 10px;
+  background: rgb(138, 138, 190);
+  box-shadow: 0px 5px 15px rgb(72, 72, 85);
+}
+
+#navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0px 20px;
+  position: relative;
+}
+
+#navbar li a{
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: 550;
+  transition: 0.3s ease;
+  color: black;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+  color: #ffffff;
+}
+
+#navbar ii a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* FLIP CARD STARTS HERE*/
+.flip-card {
+  background-color: transparent;
+  width: 30px;
+  height: 20px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px;
+  margin-bottom: 25px; /*  Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  /* background-color: dodgerblue; */
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  margin-bottom: 50px;
+}
+.btn{
+  display: inline-block;
+  background-color: black;
+  color: #ffffff;
+  padding: 15px 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+  .btn:hover{
+    background-color: #ffffff;
+    color: black;
+  }
+/* FLIP CARD END HERE */
+#banner{
+  background-image: url(img/ud.png);
+  color: rgb(0, 132, 255);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-position: top 40% right 0;
+  height: 70vh;
+  width: 100%;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 50px;
+}
+#banner h1{
+  font-size: 300%;
+  text-shadow: 30px 30px 30px rgb(0, 0, 0);
+}
+#banner h2{
+  color: black;
+  font-size: 250%;
+  text-shadow: 30px 30px 30px rgb(0, 0, 0);
+  margin-top: -30px;
+}
+#banner a{
+  margin-top: -15px;
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.404);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-text {
+  animation: slideIn 1s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+.txt{
+  text-indent: 350px;
+}
+
+.column{
+  float: left;
+  width: 33%;
+}
+
+.row{
+  display: flex;
+}
+.row:after{
+display: table;
+clear: both;
+}
+
+/* .txt{
+  display: flex;
+  justify-content: center;
+  position: relative;
+} */
+.row{
+  display: flex;
+  justify-content: center;
+}
+.column{
+  padding-left: 70px;
+}
+
+.puma{
+  cursor: pointer;
+  display: block;
+}
+.puma:hover{
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.433);
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  margin-top: 100px;
+  padding: 7px;
+  text-align: center;
+}
+.foot a img{
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+}

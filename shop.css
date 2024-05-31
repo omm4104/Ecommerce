@@ -1,0 +1,36 @@
+body{
+    width: 100%;
+    font-family: 'Unbounded', sans-serif;
+  }
+  .products{
+    display: flex;
+    /* justify-content:flex-start; */
+    padding-left: 40px;
+    
+  }
+.product h2{
+    background-color: rgb(110, 110, 110);
+    justify-content: center;
+    display: flex;
+}
+.product h4{
+    /* background-color: rgb(110, 110, 110); */
+    display: flex;
+    justify-content: center;
+}
+.cart{
+    background-color: black;
+    color: #fff;
+}
+.cart:hover{
+    background-color: #fff;
+    color: black;
+    box-shadow: 2px 3px 10px black;
+}
+.product button{
+    margin-left: 28px;
+}
+
+.product{
+    padding: 50px;
+}
